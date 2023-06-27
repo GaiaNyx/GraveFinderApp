@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/skeleton">
+
+    <TextView
+        android:id="@+id/tvHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="משתתפים בצערך"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp" />
+
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:hint="אימייל"
+        android:textColorHint="#2C3E50"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/white"
+        android:backgroundTint="#adbfc9"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:hint="סיסמא"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColorHint="#2C3E50"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:backgroundTint="#adbfc9"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="כניסה"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textColorHint="#2C3E50"
+        android:backgroundTint="#adbfc9"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הרשמה"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#adbfc9"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

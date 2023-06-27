@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsActivity"
+    android:orientation="vertical"
+    android:background="@drawable/signupbg">
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="תפריט"
+        android:backgroundTint="@color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="התראות"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Switch
+            android:id="@+id/switchWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textOff="off"
+            android:textOn="on"/>
+        <TextView
+            android:id="@+id/tvMemorial"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="התראה על מידע חדש שהועלה"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPersonalDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="פרטים אישיים"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:text="אימייל"
+        android:textColorHint="#2C3E50"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:background="@color/white"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:inputType="phone"
+        android:layout_gravity="center"
+        android:text="מספר טלפון"
+        android:textColorHint="#2C3E50"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:background="@color/white"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:text="שם מלא"
+        android:textColorHint="#2C3E50"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:background="@color/white"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:text="שם מלא"
+        android:textColorHint="#2C3E50"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:background="@color/white"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="שמור"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:backgroundTint="#5A5B9C"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

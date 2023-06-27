@@ -1,0 +1,253 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class addGraveActivity extends AppCompatActivity implements View.OnClickListener, DatePickerDialog.OnDateSetListener {
+private EditText etGraveName;
+    private EditText etBirthDate;
+    private EditText etDeathDate;
+    private EditText etDescription;
+        private String graveId;
+
+    private DatabaseReference database;
+}
+class addPicsAndMemosActivity extends AppCompatActivity implements View.OnClickListener {
+
+        private Button btnAddPics;
+        private Button btnCameraPics;
+        private Button btnAddMemos;
+
+        private String id;
+        private DatabaseReference database;
+        private FirebaseUser currentUser;
+        private Grave currentGrave;
+
+    }
+    class BgWorker extends Worker{
+    }
+    class Grave {
+        private String graveId;
+        private String graveName;
+        private String birthDate;
+        private String deathDate;
+        private String description;
+        private Double longitude;
+        private Double latitude;
+        }
+
+        class GraveAdapter extends RecyclerView.Adapter {
+            private ArrayList<Grave> graves;
+            private View.OnClickListener onItemClickListener;
+        }
+
+       class gravePageActivity extends AppCompatActivity implements View.OnClickListener {
+               private TextView tvGraveName;
+               private TextView tvBirthDate;
+               private TextView tvDeathDate;
+               private TextView tvDescription;
+               private Button btnNavigate;
+               private Button btnAddNavigation;
+               private Button btnPicsAndMemos;
+               private Button btnAddPicsAndMemos;
+               private Button btnFave;
+               private Button btnAddFave;
+               private Button btnMenu;
+
+               private DatabaseReference database;
+               private Grave currentGrave;
+               private FirebaseUser currentUser;
+               private String userID;
+               private String graveID;
+
+               private LocationRequest locationRequest;
+           }
+
+       class ImageAdapter extends RecyclerView.Adapter{
+
+               private ArrayList<ImageMemo> images;
+               private View.OnClickListener onItemClickListener;
+       }
+       class ImageMemo {
+           private String id;
+           private String ownerName;
+           private String storageFilePath;
+           }
+
+       class MainActivity extends AppCompatActivity implements View.OnClickListener{
+    private EditText etEmailAddress;
+    private EditText etPassword;
+    private Button btnSignIn;
+    private Button btnSignUp;
+           private FirebaseAuth mAuth;
+           }
+
+       class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener, GoogleMap.OnMapClickListener {
+
+           private GoogleMap mMap;
+               private MapView mvMap;
+               private static final String MAP_VIEW_BUNDLE_KEY = "MapViewBundleKey";
+
+               private LocationRequest locationRequest;
+               private double userLatitude;
+               private double userLongitude;
+
+               private DatabaseReference database;
+               private String graveID;
+               private Grave currentGrave;
+               private double graveLatitude;
+               private double graveLongitude;
+
+           }
+
+       class MemoryAdapter extends RecyclerView.Adapter{
+           private ArrayList<PDFmemo> memos;
+           private View.OnClickListener onItemClickListener;
+           }
+
+           class menuActivity extends AppCompatActivity implements View.OnClickListener {
+               private Button btnSearch;
+               private Button btnMyGraves;
+               private Button btnAddGrave;
+               }
+
+          class MyBroadcastReceiver extends BroadcastReceiver {
+          }
+
+          class myGravesActivity extends AppCompatActivity implements View.OnClickListener {
+
+              private RecyclerView rvGraves;
+              private ArrayList<Grave> graves;
+              private View.OnClickListener onItemClickListener;
+              private DatabaseReference database;
+              private Grave currentGrave;
+              private String graveID;
+              }
+
+
+              class PDFmemo {
+
+                  private String id;
+                  private String name;
+                  private String storageFilePath;
+                  }
+    class picsAndMemosActivity extends AppCompatActivity implements View.OnClickListener {
+
+        private RecyclerView rvGraveImgs;
+        private RecyclerView rvGraveMemos;
+        private MemoryAdapter memoryAdapter;
+        private ImageAdapter imageAdapter;
+
+        private DatabaseReference currentGrave;
+        private FirebaseAuth mAuth;
+        private String userID;
+
+        private ArrayList<ImageMemo> images;
+        private DatabaseReference database;
+        private View.OnClickListener onImgClickListener;
+        private ArrayList<PDFmemo> memories;
+        private View.OnClickListener onMemoryClickListener;
+        }
+
+        class searchActivity extends AppCompatActivity implements View.OnClickListener{
+
+            private DatabaseReference database;
+            private RecyclerView rvGraves;
+            private SearchView searchView;
+            private ArrayList<Grave> graves;
+            private ArrayList<Grave> filteredList;
+            private View.OnClickListener onItemClickListener;
+            }
+
+            class settingsActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
+
+                private Switch switchWork;
+                private Calendar calendar;
+
+                private EditText etEmail;
+                private EditText etPhone;
+                private EditText etName;
+                private EditText etPassword;
+
+                private DatabaseReference database;
+                private FirebaseUser currentUser;
+                private String userID;
+
+                    SharedPreferences sharedPreferences;
+
+                }
+
+                class signUpActivity extends AppCompatActivity implements View.OnClickListener{
+
+                    private EditText etEmail;
+                    private EditText etPhone;
+                    private EditText etName;
+                    private EditText etPassword;
+
+                    private DatabaseReference database;
+                    private FirebaseAuth mAuth;
+                    }
+class takePictureActivity extends AppCompatActivity implements View.OnClickListener{
+
+    private String id;
+    private DatabaseReference database;
+    private String storageFilePath;
+
+    private static final int REQUEST_TAKE_PHOTO = 1;
+    private String currentPhotoPath;
+    Bitmap bitmap;
+
+    private StorageReference storageRef;
+    private UploadTask uploadTask;
+    private Uri downloadUri;
+
+    private FirebaseUser currentUser;
+    private Grave currentGrave;
+    }
+
+    class uploadPdfActivity extends AppCompatActivity implements View.OnClickListener{
+
+        private Button btnAddMemos;
+        private EditText etPDFname;
+
+        private String id;
+        private DatabaseReference database;
+        private String storageFilePath;
+
+        private static final int PICK_PDF_FILE = 2;
+
+        private StorageReference storageRef;
+        private UploadTask uploadTask;
+        private Uri downloadUri;
+        }
+
+        class uploadPhotoActivity extends AppCompatActivity implements View.OnClickListener{
+
+            private Button btnAddPics;
+            private ImageView ivImage;
+
+            private String id;
+            private DatabaseReference database;
+            private String storageFilePath;
+
+            private String currentPhotoPath;
+            Bitmap bitmap;
+            private static final int PICK_IMG_FILE = 3;
+            private StorageReference storageRef;
+            private UploadTask uploadTask;
+            private Uri downloadUri;
+
+            private FirebaseUser currentUser;
+            }
+            class User {
+                private String userId;
+                private String email;
+                private String phone;
+                private String name;
+                private String password;
+                private ArrayList<Grave> myGraves;
+                }
+
+
+
+
+
+@enduml

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uploadPhotoActivity"
+    android:orientation="vertical"
+    android:background="@drawable/signupbg">
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="תפריט"
+        android:backgroundTint="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvGraveName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="שם הנפטר"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:textSize="40dp"
+        android:layout_marginRight="40dp"/>
+
+
+    <Button
+        android:id="@+id/btnAddPics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הוספת תמונות"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:backgroundTint="#50A5D5"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"/>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="שמור"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:backgroundTint="#5A5B9C"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

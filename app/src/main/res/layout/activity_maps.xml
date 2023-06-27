@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    android:orientation="vertical"
+    android:background="@drawable/signupbg">
+
+    <Button
+    android:id="@+id/btnMenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="תפריט"
+    android:textColor="@color/white"
+    android:backgroundTint="@color/black"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ניווט לקבר"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mvMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

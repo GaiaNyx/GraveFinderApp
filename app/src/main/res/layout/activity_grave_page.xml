@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gravePageActivity"
+    android:orientation="vertical"
+    android:background="@drawable/signupbg">
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="תפריט"
+        android:backgroundTint="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvGraveName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="שם הנפטר"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:textSize="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <TextView
+        android:id="@+id/tvBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="תאריך לידה"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"/>
+
+    <TextView
+        android:id="@+id/tvDeathDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="תאריך פטירה"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="מידע אודות הנפטר"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/btnNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="נווט למיקום הקבר"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:backgroundTint="#50A5D5"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/btnAddNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הוספת המיקום הנוכחי כמיקום הקבר"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:backgroundTint="#50A5D5"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/btnPicsAndMemos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="תמונות וזכרונות"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:backgroundTint="#50A5D5"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/btnAddPicsAndMemos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הוספה"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:backgroundTint="#50A5D5"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        >
+
+        <Button
+            android:id="@+id/btnFave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="מועדפים"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:backgroundTint="#5A5B9C"
+            android:layout_marginLeft="32dp"/>
+
+        <Button
+            android:id="@+id/btnAddFave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הוסף למועדפים"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:backgroundTint="#5A5B9C"
+            android:layout_marginLeft="40dp"/>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

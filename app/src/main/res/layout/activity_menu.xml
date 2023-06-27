@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuActivity"
+    android:orientation="vertical"
+    android:background="@drawable/graveyard">
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="חיפוש קבר"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp"
+        android:textSize="25dp"
+        android:textColorHint="#2C3E50"
+        android:backgroundTint="#adbfc9" />
+
+    <Button
+        android:id="@+id/btnMyGraves"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="הקברים שלי"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textColorHint="#2C3E50"
+        android:backgroundTint="#adbfc9"/>
+
+
+    <Button
+        android:id="@+id/btnAddGrave"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="הוספת קבר"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textColorHint="#2C3E50"
+        android:backgroundTint="#adbfc9" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

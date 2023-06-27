@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUpActivity"
+    android:orientation="vertical"
+    android:background="@drawable/signupbg">
+
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:hint="אימייל"
+        android:textColorHint="#2C3E50"
+        android:gravity="right"
+        android:textSize="25dp"
+        android:background="@color/white"
+        android:backgroundTint="#adbfc9"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_gravity="center"
+        android:hint="מספר טלפון"
+        android:textColorHint="#2C3E50"
+        android:gravity="right"
+        android:textSize="25dp"
+        android:background="@color/white"
+        android:backgroundTint="#adbfc9"
+        android:layout_marginTop="90dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:hint="שם מלא"
+        android:textColorHint="#2C3E50"
+        android:gravity="right"
+        android:textSize="25dp"
+        android:background="@color/white"
+        android:backgroundTint="#adbfc9"
+        android:layout_marginTop="90dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:hint="סיסמא"
+        android:textColorHint="#2C3E50"
+        android:gravity="right"
+        android:textSize="25dp"
+        android:background="@color/white"
+        android:backgroundTint="#adbfc9"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="*על הסיסמה להכיל 6 או יותר תווים"
+        android:layout_gravity="right"
+        android:layout_marginRight="60dp"/>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הרשמה"
+        android:textSize="25dp"
+        android:textColorHint="#2C3E50"
+        android:backgroundTint="#adbfc9"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"/>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "640619702819",
+    "firebase_url": "https://gravefinder-87c7e-default-rtdb.firebaseio.com",
+    "project_id": "gravefinder-87c7e",
+    "storage_bucket": "gravefinder-87c7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640619702819:android:54fa8b5c47e1bbfb04df96",
+        "android_client_info": {
+          "package_name": "com.example.gravefinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640619702819-f20u0prgoktoriu0nmpcvjtp1v6i15ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaQifSLIaFJ8zinIw1bA2LZKFOiHMajoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640619702819-f20u0prgoktoriu0nmpcvjtp1v6i15ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
